@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-  <title>Guuuuuu</title>
-  </head> 
-    <body>
-
-    </body>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="clipboard">
+        <div class="paper">
+            <ul id="todo"></ul>
+        </div>
+    </div>
+    <div class="input">
+        <div class="input-group">
+            <input id="item" placeholder="Put the task here" aria-label="Task input">
+            <button id="add-item" title="Add Task"><b>+</b></button>
+        </div>
+        <button id="delete-all" title="Delete All Tasks"><b>Delete All Tasks</b></button>
+    </div>
+    <script src="index.js"></script>
+</body>
 </html>
