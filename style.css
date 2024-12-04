@@ -16,7 +16,7 @@
     background-color: white;
     border-radius: 5px;
     display: flex;
-    overflow: scroll;
+    overflow: auto;
 }
 
 body {
