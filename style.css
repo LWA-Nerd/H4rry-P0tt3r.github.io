@@ -1,120 +1,139 @@
-.clipboard {
-    border-radius: 20px;
-    background-color: rgb(227, 95, 0);
-    height: 100vh;
-    width: 35vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.paper {
-    height: 90vh;
-    width: 30vw;
-    margin: auto;
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    overflow: auto;
-}
-
 body {
-    background-image: url('https://codehs.com/uploads/a264ad4e3666290762cfb13a401b8bad');
+    /* background-color: rgb(0, 136, 255); */
+    background-image: url(background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.input {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-}
-
-.input-group {
-    display: flex; 
-    align-items: center; 
-}
-
-#add-item {
-    border-radius: 100px;
-    background-color: rgba(74, 255, 112, 1);
-    color: white;
-    font-size: 40px;
-    border: none;
-    width: 40px;
-    height: 40px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    cursor: pointer; 
-    transition: background-color 0.3s;
+#navbar {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: rgba(115, 115, 115, 0.7);
+    border-radius: 10px;
+    width: 80vw;
 }
 
-#add-item:hover {
-    background-color: rgb(40, 143, 63);
+.nav {
+    float: left;
 }
 
-#item {
-    height: 40px;
-    width: 200px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border-width: 1px;
-    font-family: "Afacad Flux", sans-serif;
-    font-size: 100%;
-}
-
-#todo li {
-    padding: 10px;
-    position: relative; 
-    font-family: "Patrick Hand", sans-serif;
-}
-
-.delete {
-    display: none;
-    margin-left: 10px;
-    background-color: rgb(255, 98, 98);
-    color: white;
-    text-align: center;
-    border-width: 1px;
-    border-radius: 5px;
-    font-size: 15px;
-}
-
-#todo li:hover .delete {
-    display: inline;
-    cursor: pointer;
-}
-
-.completed {
-    text-decoration: line-through;
-    color: gray;
-}
-
-@media (max-width: 600px) {
-    .clipboard {
-        width: 90vw;
-    }
-    .paper {
-        width: 85vw;
-    }
-}
-
-#delete-all {
-    background-color: rgb(250, 138, 138);
-    border-radius: 5px;
-    text-align: center;
-    color: white;
+.nav a {
     display: block;
-    margin-top: 10px;
-    cursor: pointer;
-    font-family: "Afacad Flux", sans-serif;
-    transition: background-color 0.3s;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-family: "Afacad Flux", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.3s ease;
+    transition: font-size 0.3s ease;
 }
 
-#delete-all:hover{
-    background-color: rgb(217, 25, 25);
+.nav a:hover {
+    font-size: 21px;
+}
+
+.nav a:before, .nav a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav a:before {
+    top: 0;
+}
+
+.nav a:after {
+    bottom: 0;
+}
+
+.nav a:hover:before, .nav a:hover:after {
+    width: 100%;
+}
+
+.nav a:hover {
+    background-color: rgba(34, 130, 34, 0.5);
+}
+
+#logo {
+    height: 80px;
+    float: right;
+}
+
+#header {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: blue;
+    position: fixed;
+    z-index: 10;
+    margin: 0; */
+}
+
+#AI-title {
+    width: 30%;
+    height: auto;  /* Maintains aspect ratio */
+    vertical-align: middle;  /* Aligns image with text */
+    display: inline-block;  /* Better control over image placement */
+}
+
+
+#title {
+    color: white;
+    font-family: 'Special Elite', sans-serif;
+    height: 30vh;
+    vertical-align: middle;
+    position: relative;
+    padding: 20px;
+}
+
+#title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    background-image: url('banner.jepg.jpg');
+    z-index: -1;
+}
+
+#inspo {
+    font-size: 35px;
+    font-family: 'Afacad Flux', sans-serif;
+}
+
+.speaker {
+    font-family: 'Afacad Flux', sans-serif;
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+#intro {
+    font-family: 'Afacad Flux', sans-serif;
+    font-size: 20px;
+}
+
+#footer {
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+}
+
+.default {
+    font-family: 'Afacad Flux', sans-serif;
+    font-size: 20px;
 }
