@@ -137,3 +137,33 @@ body {
     font-family: 'Afacad Flux', sans-serif;
     font-size: 20px;
 }
+
+.innovationimgs {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    text-align: center;
+}
+
+#turing, #samuel {
+    height: 300px;
+    width: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#yap1 {
+    text-align: center;
+}
+
+.default {
+    font-family: 'Afacad Flux', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#gpt {
+    width: 70vw;
+    height: 50vh;
+}
